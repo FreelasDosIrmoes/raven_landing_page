@@ -1,6 +1,7 @@
 import "./App.css";
 import type { HeaderLink } from "./components/Header";
 import Header from "./components/Header";
+import { Projetos } from "./components/Projetos";
 
 const headerLinks: HeaderLink[] = [
   { link: "#services", name: "Serviços" },
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="w-full font-sans">
       <Header redirectContactUs={redirectContactUs} headerLinks={headerLinks} />
+      <Projetos />
     </div>
   );
 }
