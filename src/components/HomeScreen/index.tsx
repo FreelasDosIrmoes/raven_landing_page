@@ -4,7 +4,7 @@ export default function HomeScreen() {
   return (
     <div className="h-[784px] w-full px-4 md:px-[100px] py-[40px] relative overflow-x-hidden">
       <div
-        className="absolute inset-0 bg-[url('src/assets/lines-bg.png')] bg-cover bg-center z-0 -top-10 md:top-0 lg:max-h-full max-h-96"
+        className="absolute inset-0 bg-[url('/images/lines-bg.png')] bg-cover bg-center z-0 -top-10 md:top-0 lg:max-h-full max-h-96"
         style={{
           width: "100%",
           height: "auto",
@@ -28,7 +28,7 @@ export default function HomeScreen() {
 
         <div className="col-right w-1/2 md:flex hidden justify-end ml-5">
           <img
-            src="src/assets/home-info-bg.png"
+            src="/images/home-info-bg.png"
             alt="Imagem ilustrativa"
             className="w-full max-w-[500px]"
           />
