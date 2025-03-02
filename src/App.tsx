@@ -1,4 +1,5 @@
 import "./App.css";
+import AdvantageScreen from "./components/AdvantagesScreen";
 import type { HeaderLink } from "./components/Header";
 import Header from "./components/Header";
 import HomeScreen from "./components/HomeScreen";
@@ -17,6 +18,7 @@ function App() {
     <div className="w-full font-sans">
       <Header redirectContactUs={redirectContactUs} headerLinks={headerLinks} />
       <HomeScreen />
+      <AdvantageScreen />
       <Projetos />
     </div>
   );
