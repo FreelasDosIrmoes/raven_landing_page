@@ -4,6 +4,7 @@ import type { HeaderLink } from "./components/Header";
 import Header from "./components/Header";
 import HomeScreen from "./components/HomeScreen";
 import { Projetos } from "./components/Projetos";
+import WorkWithUsScreen from "./components/WorkWithUsScreen";
 
 const headerLinks: HeaderLink[] = [
   { link: "#services", name: "Serviços" },
@@ -20,6 +21,7 @@ function App() {
       <HomeScreen />
       <AdvantageScreen />
       <Projetos />
+      <WorkWithUsScreen redirectContactUs={redirectContactUs} />
     </div>
   );
 }
