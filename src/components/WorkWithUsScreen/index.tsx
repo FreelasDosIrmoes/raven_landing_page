@@ -22,7 +22,7 @@ export default function WorkWithUsScreen({ redirectContactUs }: WorkWithUsScreen
           até a entrega, trabalho com foco na qualidade e no prazo combinado.
         </div>
         <a href={redirectContactUs} target="_blank" rel="noopener noreferrer">
-          <Button className="bg-primary-normal hover:bg-primary-normal/85 hover:cursor-pointer px-[40px] py-[20px]">
+          <Button className="bg-primary-normal hover:bg-primary-normal/85 hover:cursor-pointer w-60 h-10 text-lg">
             Fale Conosco
             <ArrowRight size={32} />
           </Button>
