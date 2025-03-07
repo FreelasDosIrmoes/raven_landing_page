@@ -1,16 +1,13 @@
 import { A11y, EffectCoverflow, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import Seta from "../../assets/icones/seta.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "./carrousel.css";
 
 import slide_image_1 from "../../assets/image-1.png";
 import slide_image_2 from "../../assets/image-2.png";
 import slide_image_3 from "../../assets/image-3.png";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 function Carrousel() {
-  const swiper = useSwiper();
   const projetos = [
     {
       nome: "Sistema de Consulta IMEI",
