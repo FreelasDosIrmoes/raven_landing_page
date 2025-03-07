@@ -1,6 +1,10 @@
 import { Button } from "../ui/button";
 
-export default function HomeScreen() {
+interface HomeScreenProps {
+  redirectContactUs: string;
+}
+
+export default function HomeScreen({ redirectContactUs }: HomeScreenProps) {
   return (
     <div className="h-auto lg:h-[784px] w-full px-4 md:px-[100px] py-[40px] relative overflow-x-hidden">
       <div
@@ -23,7 +27,11 @@ export default function HomeScreen() {
             segurança e eficiência. Ajudamos você a crescer com tecnologia de ponta, entregue por
             uma equipe motivada por resultados.
           </h3>
-          <Button className="bg-primary-dark text-white w-fit">Fale Conosco</Button>
+          <a href={redirectContactUs} target="_blank" rel="noopener noreferrer">
+            <Button className="bg-primary-normal hover:bg-primary-normal/85 hover:cursor-pointer w-60 h-10 text-lg">
+              Fale Conosco
+            </Button>
+          </a>
         </div>
 
         <div className="col-right w-1/2 md:flex hidden justify-end ml-5">
