@@ -10,7 +10,7 @@ import { Projetos } from "./components/Projetos";
 import WorkWithUsScreen from "./components/WorkWithUsScreen";
 
 const headerLinks: HeaderLink[] = [
-  { link: "#services", name: "Serviços" },
+  { link: "#benefícios", name: "Serviços" },
   { link: "#contact", name: "Contato" },
   { link: "#faq", name: "Dúvidas" },
 ];
@@ -22,14 +22,18 @@ function App() {
     <div className="w-full font-sans">
       <Header redirectContactUs={redirectContactUs} headerLinks={headerLinks} />
       <HomeScreen redirectContactUs={redirectContactUs} />
-      <div id="services">
+      <div id="benefícios">
         <AdvantageScreen />
       </div>
-      <Projetos />
+      <div id="projetos">
+        <Projetos />
+      </div>
       <div id="contact">
         <WorkWithUsScreen redirectContactUs={redirectContactUs} />
       </div>
-      <Feedback />
+      <div id="feedback">
+        <Feedback />
+      </div>
       <div id="faq">
         <FAQScreen />
       </div>
