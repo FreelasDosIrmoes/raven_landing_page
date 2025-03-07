@@ -2,20 +2,20 @@ import { useState } from "react";
 import logo from "../../assets/RAVEN-LOGO-BRANCO.png";
 
 const Footer = () => (
-  <footer className="bg-primary-dark text-white py-12 px-8">
-    <div className="flex flex-col items-center justify-center text-center">
-      <img
-        src={logo}
-        alt="Raven Logo"
-        className="max-w-[200px] md:max-w-[100px] lg:max-w-[180px] mb-4"
-      />
-      <div className="text-white text-xs max-w-[300px] text-center">
-        A Raven nasceu para transformar a forma como criamos e utilizamos tecnologia. Desenvolvemos
-        softwares inovadores e bem projetados, levando soluções inteligentes para o mundo.
+  <footer className="bg-primary-dark text-white py-8 px-8">
+    <div className="flex items-center flex-col md:flex-row justify-center gap-8 px-0 xs:px-0 md:px-0 lg:px-20 xl:px-40">
+      <div className="flex flex-col items-center justify-center text-center">
+        <img
+          src={logo}
+          alt="Raven Logo"
+          className="max-w-[200px] md:max-w-[100px] lg:max-w-[180px] mb-4"
+        />
+        <div className="text-white text-xs max-w-[300px] text-center">
+          A Raven nasceu para transformar a forma como criamos e utilizamos tecnologia.
+          Desenvolvemos softwares inovadores e bem projetados, levando soluções inteligentes para o
+          mundo.
+        </div>
       </div>
-    </div>
-
-    <div className="flex items-center flex-col md:flex-row justify-center gap-8 mt-8 px-10 xs:px-20 md:px-40">
       <div className="mx-auto flex items-center justify-between gap-8 justify-items-center">
         <FooterColumn title="Empresa" links={["Benefícios", "Projetos", "Feedback", "FAQ"]} />
       </div>
@@ -29,11 +29,11 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="container mx-auto mt-8 border-t border-gray-600 pt-4 flex flex-col md:flex-row items-center justify-center text-center">
-      <p className="text-xs md:text-sm mb-4 md:mb-0">
-        © 2025 Raven. Todos os direitos reservados.
-      </p>
+    <div className="container mx-auto mt-8 border-t border-white pt-4 flex flex-col md:flex-row items-center justify-center text-center">
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-sm">
+        <p className="text-xs md:text-sm mb-4 md:mb-0">
+          © 2025 Raven. Todos os direitos reservados.
+        </p>
         <a href="#" className="hover:underline">
           Política de Privacidade
         </a>
