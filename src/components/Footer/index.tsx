@@ -15,26 +15,12 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-        <FooterColumn
-          title="Empresa"
-          links={[
-            "Sobre a Raven",
-            "Nossos Serviços",
-            "Projetos",
-            "Fale Conosco",
-            "Solicite um Orçamento",
-          ]}
-        />
-        <FooterColumn
-          title="Recursos"
-          links={["Centro de Ajuda", "Guias e Tutoriais", "Blog", "Instagram", "Email"]}
-        />
-        <div className="hidden md:block"></div> {/* Placeholder to balance columns */}
+    <div className="flex items-center flex-col md:flex-row justify-center gap-8 mt-8 px-10 xs:px-20 md:px-40">
+      <div className="mx-auto flex items-center justify-between gap-8 justify-items-center">
+        <FooterColumn title="Empresa" links={["Benefícios", "Projetos", "Feedback", "FAQ"]} />
       </div>
 
-      <div className="container mx-auto mt-8 flex flex-col items-center justify-center text-center md:mt-0">
+      <div className="mx-auto mt-8 flex flex-col items-center justify-center text-center md:mt-0">
         <div>
           <p className="font-semibold">Entre em contato também pelo E-mail</p>
           <p>Mande seu email para marcarmos uma reunião!!</p>
