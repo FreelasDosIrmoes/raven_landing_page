@@ -12,7 +12,7 @@ import WorkWithUsScreen from "./components/WorkWithUsScreen";
 const headerLinks: HeaderLink[] = [
   { link: "#services", name: "Serviços" },
   { link: "#contact", name: "Contato" },
-  { link: "#about", name: "Sobre" },
+  { link: "#faq", name: "Dúvidas" },
 ];
 
 const redirectContactUs =
@@ -22,11 +22,17 @@ function App() {
     <div className="w-full font-sans">
       <Header redirectContactUs={redirectContactUs} headerLinks={headerLinks} />
       <HomeScreen redirectContactUs={redirectContactUs} />
-      <AdvantageScreen />
+      <div id="services">
+        <AdvantageScreen />
+      </div>
       <Projetos />
-      <WorkWithUsScreen redirectContactUs={redirectContactUs} />
+      <div id="contact">
+        <WorkWithUsScreen redirectContactUs={redirectContactUs} />
+      </div>
       <Feedback />
-      <FAQScreen />
+      <div id="faq">
+        <FAQScreen />
+      </div>
       <Footer />
     </div>
   );
