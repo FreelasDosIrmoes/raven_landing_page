@@ -1,5 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/RAVEN-LOGO-BRANCO.png";
+import { useMutation } from "@tanstack/react-query";
+import { api } from "@/api";
 
 const Footer = () => (
   <footer className="bg-primary-dark text-white py-8 px-8">
@@ -69,13 +71,24 @@ const NewsletterForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const mutation = useMutation({
+    mutationFn: async () => api.post("/message/", { email, texto: message }),
+    onSuccess: () => {
+      setEmail("");
+      setMessage("");
+    },
+    onError: (error) => {
+      console.error("Erro ao enviar mensagem:", error);
+    },
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // eslint-disable-next-line max-len
-    const mailtoLink = `mailto:contato.raventech@gmail.com?subject=Newsletter&body=${encodeURIComponent(
-      message
-    )}%0A%0AEmail: ${encodeURIComponent(email)}`;
-    window.location.href = mailtoLink;
+    if (!email || !message) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+    mutation.mutate();
   };
 
   return (
@@ -99,8 +112,9 @@ const NewsletterForm = () => {
       <button
         type="submit"
         className="bg-primary-normal text-white text-md px-4 py-2 rounded-md hover:bg-opacity-30 hover:cursor-pointer"
+        disabled={mutation.isPending}
       >
-        Enviar
+        {mutation.isPending ? "Enviando..." : "Enviar"}
       </button>
     </form>
   );
