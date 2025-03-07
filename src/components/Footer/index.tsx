@@ -3,6 +3,17 @@ import logo from "../../assets/RAVEN-LOGO-BRANCO.png";
 import { useMutation } from "@tanstack/react-query";
 import { api } from "@/api";
 
+export type FooterLink = {
+  title: string;
+  links: string[];
+};
+
+const footerLinks: FooterLink[] = [
+  { title: "Empresa", links: ["Benefícios", "Projetos", "Feedback", "FAQ"] },
+  { title: "Suporte", links: ["Contato", "Ajuda", "Documentação"] },
+  { title: "Redes Sociais", links: ["LinkedIn", "Instagram", "Twitter"] },
+];
+
 const Footer = () => (
   <footer className="bg-primary-dark text-white py-8 px-8">
     <div className="flex items-center flex-col md:flex-row justify-center gap-8 px-0 xs:px-0 md:px-0 lg:px-20 xl:px-40">
@@ -19,7 +30,9 @@ const Footer = () => (
         </div>
       </div>
       <div className="mx-auto flex items-center justify-between gap-8 justify-items-center">
-        <FooterColumn title="Empresa" links={["Benefícios", "Projetos", "Feedback", "FAQ"]} />
+        {footerLinks.map((column, index) => (
+          <FooterColumn key={index} title={column.title} links={column.links} />
+        ))}
       </div>
 
       <div className="mx-auto mt-8 flex flex-col items-center justify-center text-center md:mt-0">
@@ -54,18 +67,32 @@ interface FooterColumnProps {
   title: string;
   links: string[];
 }
-const FooterColumn = ({ title, links }: FooterColumnProps) => (
-  <div className="text-center">
-    <h3 className="font-semibold mb-2">{title}</h3>
-    <ul>
-      {links.map((link, index) => (
-        <li key={index} className="text-sm hover:underline cursor-pointer mb-2">
-          {link}
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+
+const FooterColumn = ({ title, links }: FooterColumnProps) => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="text-center">
+      <h3 className="font-semibold mb-2">{title}</h3>
+      <ul>
+        {links.map((link, index) => (
+          <li
+            key={index}
+            className="text-sm hover:underline cursor-pointer mb-2"
+            onClick={() => scrollToSection(link.toLowerCase())}
+          >
+            {link}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 const NewsletterForm = () => {
   const [email, setEmail] = useState("");
