@@ -6,15 +6,6 @@ export const Projetos = () => (
       <h2 className="font-bold w-full text-3xl md:text-4xl lg:text-6xl text-white text-left z-10 relative whitespace-nowrap">
         Nossos Projetos
       </h2>
-      {/* <div
-          className="
-            absolute z-0
-            top-full left-0 w-[20%] h-[50%] 
-            transform translate-y-2
-          "
-        >
-          <img src={Rabisco} className="w-full h-full" />
-        </div> */}
     </div>
     <Carrousel />
   </section>
