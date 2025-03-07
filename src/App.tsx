@@ -1,5 +1,6 @@
 import "./App.css";
 import AdvantageScreen from "./components/AdvantagesScreen";
+import FAQScreen from "./components/FAQScreen";
 import { Feedback } from "./components/Feedback";
 import Footer from "./components/Footer";
 import type { HeaderLink } from "./components/Header";
@@ -25,6 +26,7 @@ function App() {
       <Projetos />
       <WorkWithUsScreen redirectContactUs={redirectContactUs} />
       <Feedback />
+      <FAQScreen />
       <Footer />
     </div>
   );
