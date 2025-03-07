@@ -13,7 +13,7 @@ export default function FAQScreen() {
       </div>
       <Accordion type="single" collapsible className="w-full text-primary-dark">
         <AccordionItem value="item-1">
-          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl">
+          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl hover:cursor-pointer">
             Quanto tempo leva para desenvolver um software sob medida para minha empresa?
           </AccordionTrigger>
           <AccordionContent className="text-black">
@@ -23,7 +23,7 @@ export default function FAQScreen() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl">
+          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl hover:cursor-pointer">
             Como vocês garantem a segurança e a qualidade do código nos projetos que entregam?
           </AccordionTrigger>
           <AccordionContent className="text-black">
@@ -33,7 +33,7 @@ export default function FAQScreen() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl">
+          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl hover:cursor-pointer">
             Vocês oferecem suporte após a entrega do projeto?
           </AccordionTrigger>
           <AccordionContent className="text-black">
@@ -45,7 +45,7 @@ export default function FAQScreen() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl">
+          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl hover:cursor-pointer">
             Qual é o custo de uma solução de TI personalizada para minha empresa?
           </AccordionTrigger>
           <AccordionContent className="text-black">
@@ -56,7 +56,7 @@ export default function FAQScreen() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
-          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl">
+          <AccordionTrigger className="font-bold text-md md:text-lg lg:text-xl hover:cursor-pointer">
             Como funciona o processo de contrato e acordo para os projetos da Raven?
           </AccordionTrigger>
           <AccordionContent className="text-black">
