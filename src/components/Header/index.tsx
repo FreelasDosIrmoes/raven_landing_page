@@ -11,6 +11,14 @@ interface HeaderProps {
 }
 
 export default function Header({ headerLinks, redirectContactUs }: HeaderProps) {
+  const handleScroll = (event: React.MouseEvent, link: string) => {
+    event.preventDefault();
+    const section = document.querySelector(link);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="w-full h-fit bg-white flex justify-center md:justify-between items-center px-22 py-5">
       <a href={"https://raventech.com.br"}>
@@ -27,6 +35,7 @@ export default function Header({ headerLinks, redirectContactUs }: HeaderProps) 
             <a
               key={id}
               href={link.link}
+              onClick={(e) => handleScroll(e, link.link)}
               className="text-primary-dark transition-colors duration-200 hover:text-primary-normal"
             >
               {link.name}
