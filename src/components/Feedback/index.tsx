@@ -19,10 +19,12 @@ export const Feedback = () => {
       profissao: "Psicóloga",
     },
     {
-      descricao: "A equipe realizou o trabalho com qualidade e presteza!",
+      descricao:
+        // eslint-disable-next-line max-len
+        "A equipe realizou o trabalho com qualidade e presteza! A solução tem me gerado resultados bons.",
       estrelas: 5,
-      nome: "Luiz Fabiano",
-      profissao: "Estudante",
+      nome: "Renato Lobo",
+      profissao: "Empresário",
     },
   ];
 
