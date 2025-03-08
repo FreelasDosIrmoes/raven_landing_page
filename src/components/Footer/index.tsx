@@ -2,16 +2,38 @@ import { useState } from "react";
 import logo from "../../assets/RAVEN-LOGO-BRANCO.png";
 import { useMutation } from "@tanstack/react-query";
 import { api } from "@/api";
+import { toast } from "sonner";
 
 export type FooterLink = {
   title: string;
-  links: string[];
+  links: { label: string; url?: string }[];
 };
 
 const footerLinks: FooterLink[] = [
-  { title: "Empresa", links: ["Benefícios", "Projetos", "Feedback", "FAQ"] },
-  { title: "Suporte", links: ["Contato", "Ajuda", "Documentação"] },
-  { title: "Redes Sociais", links: ["LinkedIn", "Instagram", "Twitter"] },
+  {
+    title: "Empresa",
+    links: [
+      { label: "Benefícios" },
+      { label: "Projetos" },
+      { label: "Feedback" },
+      { label: "FAQ" },
+    ],
+  },
+  {
+    title: "Suporte",
+    links: [{ label: "Contato" }, { label: "Ajuda" }, { label: "Documentação" }],
+  },
+  {
+    title: "Contato",
+    links: [
+      {
+        label: "WhatsApp",
+        url: "https://wa.me/5585989338909?text=Olá,%20queria%20saber%20melhor%20sobre%20os%20produtos%20e%20serviços%20da%20Raven.",
+      },
+      { label: "Instagram", url: "https://instagram.com/raventechsolutions" },
+      { label: "Email", url: "mailto:contato.raventech@gmail.com" },
+    ],
+  },
 ];
 
 const Footer = () => (
@@ -65,7 +87,7 @@ const Footer = () => (
 
 interface FooterColumnProps {
   title: string;
-  links: string[];
+  links: { label: string; url?: string }[];
 }
 
 const FooterColumn = ({ title, links }: FooterColumnProps) => {
@@ -84,9 +106,11 @@ const FooterColumn = ({ title, links }: FooterColumnProps) => {
           <li
             key={index}
             className="text-sm hover:underline cursor-pointer mb-2"
-            onClick={() => scrollToSection(link.toLowerCase())}
+            onClick={() =>
+              link.url ? window.open(link.url, "_blank") : scrollToSection(link.label.toLowerCase())
+            }
           >
-            {link}
+            {link.label}
           </li>
         ))}
       </ul>
@@ -103,16 +127,18 @@ const NewsletterForm = () => {
     onSuccess: () => {
       setEmail("");
       setMessage("");
+      toast.success("Mensagem enviada com sucesso. Em breve iremos entrar em contato!");
     },
     onError: (error) => {
       console.error("Erro ao enviar mensagem:", error);
+      toast.error("Erro ao enviar mensagem. Tente novamente mais tarde.");
     },
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !message) {
-      alert("Por favor, preencha todos os campos.");
+      toast.warning("Por favor, preencha todos os campos.");
       return;
     }
     mutation.mutate();
