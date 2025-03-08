@@ -1,3 +1,4 @@
+import { Instagram } from "lucide-react";
 import { Button } from "../ui/button";
 
 export type HeaderLink = {
@@ -30,6 +31,9 @@ export default function Header({ headerLinks, redirectContactUs }: HeaderProps) 
         />
       </a>
       <div className="md:flex hidden items-center gap-8">
+        <a href="https://instagram.com/raventechsolutions">
+          <Instagram size={24} className="stroke-primary-dark" />
+        </a>
         <div className="header-links w-fit h-fit flex justify-center items-center gap-8">
           {headerLinks.map((link, id) => (
             <a
