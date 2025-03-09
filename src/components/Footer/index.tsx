@@ -3,6 +3,7 @@ import logo from "../../assets/RAVEN-LOGO-BRANCO.png";
 import { useMutation } from "@tanstack/react-query";
 import { api } from "@/api";
 import { toast } from "sonner";
+import DialogFooter from "../DialogBase/DialogFooter";
 
 export type FooterLink = {
   title: string;
@@ -102,17 +103,23 @@ const FooterColumn = ({ title, links }: FooterColumnProps) => {
     <div className="text-center">
       <h3 className="font-semibold mb-2">{title}</h3>
       <ul>
-        {links.map((link, index) => (
-          <li
-            key={index}
-            className="text-sm hover:underline cursor-pointer mb-2"
-            onClick={() =>
-              link.url ? window.open(link.url, "_blank") : scrollToSection(link.label.toLowerCase())
-            }
-          >
-            {link.label}
-          </li>
-        ))}
+        {links.map((link, index) =>
+          title === "Suporte" ? (
+            <DialogFooter link={link} key={index} />
+          ) : (
+            <li
+              key={index}
+              className="text-sm hover:underline cursor-pointer mb-2"
+              onClick={() =>
+                link.url
+                  ? window.open(link.url, "_blank")
+                  : scrollToSection(link.label.toLowerCase())
+              }
+            >
+              {link.label}
+            </li>
+          )
+        )}
       </ul>
     </div>
   );
