@@ -31,9 +31,11 @@ export default function Header({ headerLinks, redirectContactUs }: HeaderProps) 
         />
       </a>
       <div className="md:flex hidden items-center gap-8">
-        <a href="https://instagram.com/raventechsolutions">
-          <Instagram size={24} className="stroke-primary-dark" />
-        </a>
+        <Instagram
+          size={24}
+          className="stroke-primary-dark hover:cursor-pointer hover:stroke-primary-normal transition-colors duration-200"
+          onClick={() => window.open("https://instagram.com/raventechsolutions", "_blank")}
+        />
         <div className="header-links w-fit h-fit flex justify-center items-center gap-8">
           {headerLinks.map((link, id) => (
             <a
