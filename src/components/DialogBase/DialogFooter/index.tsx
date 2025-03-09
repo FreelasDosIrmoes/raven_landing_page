@@ -105,7 +105,7 @@ export function DialogContentHelp() {
       <Button
         variant="outline"
         className="w-full"
-        onClick={() => window.open("https://raventech.com.br//ajuda", "_blank")}
+        onClick={() => window.open("https://raventech.com.br/ajuda", "_blank")}
       >
         Acessar Central de Ajuda
       </Button>
@@ -124,7 +124,7 @@ export function DialogContentDocs() {
       <Button
         variant="outline"
         className="w-full"
-        onClick={() => window.open("https://raventech.com.br//docs", "_blank")}
+        onClick={() => window.open("https://raventech.com.br/docs", "_blank")}
       >
         Acessar Documentação
       </Button>
