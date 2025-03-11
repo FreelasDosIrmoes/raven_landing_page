@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { A11y, EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -15,6 +16,7 @@ import {
   projeto4,
   projeto5,
   projeto6,
+  projeto7,
 } from "./cdn-image";
 import { Button } from "../ui/button";
 import { Plus } from "lucide-react";
@@ -31,47 +33,60 @@ function Carrousel() {
   const projetos = [
     {
       nome: "Sistema de Consulta IMEI",
-      descricao: "Descrição do Projeto 1. Este é um projeto incrível!",
-      tipo: "Design",
+      descricao:
+        "Projeto para consulta de dados de celulares via IMEI, com informações detalhadas por plano e suporte a marcas famosas. Desenvolvido para uso on-demand.",
+      tipo: "Desenvolvimento",
       imagem: projeto1,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "Projeto 0",
-      descricao: "Descrição do Projeto 1. Este é um projeto incrível!",
-      tipo: "Design",
+      nome: "Agua vitoria",
+      descricao:
+        "Plataforma para controle de estoque, produtos, vendas e histórico, com relatórios e acesso restrito. Desenvolvida para otimizar a gestão de distribuidora de água.",
+      tipo: "Desenvolvimento",
       imagem: projeto2,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "Projeto 2",
-      descricao: "Descrição do Projeto 2. Este projeto é focado em desenvolvimento.",
+      nome: "CRM DEPOSITO",
+      descricao:
+        "CRM para gestão de vendas, clientes e relatórios em PDF. Inclui sistema de mensagens em massa para envio de promoções aos clientes.",
       tipo: "Desenvolvimento",
       imagem: projeto3,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "Projeto 3",
-      descricao: "Descrição do Projeto 3. Um projeto de marketing digital.",
-      tipo: "Marketing",
+      nome: "TKINTER",
+      descricao:
+        "Aplicativo desktop para gestão de cobranças de clientes, integrado à plataforma ASAAS para emissão de boletos. Solução simples e eficaz para controle financeiro.",
+      tipo: "Desenvolvimento",
       imagem: projeto4,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "Projeto 7",
-      descricao: "Descrição do Projeto 3. Um projeto de marketing digital.",
-      tipo: "Marketing",
-      imagem: projeto5,
+      nome: "TV-METRÓPOLE",
+      descricao:
+        "Sistema para rede emissora de TV que exibe a programação semanal, com dias e horários dos programas. Solução simples para consulta rápida.",
+      tipo: "Desenvolvimento",
+      imagem: projeto6,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+    },
+    {
+      nome: "MARKETPLACE X",
+      descricao:
+        "Plataforma de marketplace focada em simplicidade e praticidade define o propósito e os valores principais.",
+      tipo: "Desenvolvimento",
+      imagem: projeto7,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
   ];
 
-  const ButtonOpenModal = (
-    <Button className="bg-primary-dark hover:bg-primary-normal transition-all duration-200 text-white px-4 py-2 rounded-xl flex justify-between">
-      <span>Veja mais</span>
-      <Plus />
-    </Button>
-  );
+  // const ButtonOpenModal = (
+  //   <Button className="bg-primary-dark hover:bg-primary-normal transition-all duration-200 text-white px-4 py-2 rounded-xl flex justify-between">
+  //     <span>Veja mais</span>
+  //     <Plus />
+  //   </Button>
+  // );
 
   const handleOpenModal = (project: { title: string; description: string; images: string[] }) => {
     setSelectedProject(project);
