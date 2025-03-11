@@ -1,4 +1,5 @@
 import "./App.css";
+import { Helmet } from "react-helmet";
 import AdvantageScreen from "./components/AdvantagesScreen";
 import DialogBase from "./components/DialogBase";
 import FAQScreen from "./components/FAQScreen";
@@ -20,9 +21,22 @@ const headerLinks: HeaderLink[] = [
 
 const redirectContactUs =
   "https://wa.me/5585989338909?text=Olá,%20queria%20saber%20melhor%20sobre%20os%20produtos%20e%20serviços%20da%20Raven.";
+
 function App() {
   return (
     <>
+      <Helmet>
+        <title>RavenTech - Soluções De Software</title>
+        <meta name="description" content="Descubra os melhores produtos e serviços da Raven." />
+        <meta property="og:title" content="Raven - Soluções De Software" />
+        <meta
+          property="og:description"
+          content="Conheça nossos serviços e entre em contato agora!"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://raventech.com.br" />
+      </Helmet>
+
       <Toaster position="top-right" richColors />
       <div className="w-full font-sans">
         <Header redirectContactUs={redirectContactUs} headerLinks={headerLinks} />

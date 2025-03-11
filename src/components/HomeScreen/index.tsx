@@ -22,7 +22,7 @@ export default function HomeScreen({ redirectContactUs }: HomeScreenProps) {
           <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-primary-dark">
             Transforme Seus Desafios em Soluções Poderosas
           </h1>
-          <h3 className="font-normal text-sm md:text-lg lg:text-xl text-primary-dark">
+          <h3 className="font-normal text-sm md:text-lg lg:text-xl text-black">
             Na Raven, criamos soluções inteligentes sob medida para empresas que buscam inovação,
             segurança e eficiência. Ajudamos você a crescer com tecnologia de ponta, entregue por
             uma equipe motivada por resultados.
