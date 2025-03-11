@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+/* eslint-disable */
 import { A11y, EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -40,31 +40,31 @@ function Carrousel() {
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "Agua vitoria",
+      nome: "Sistema de Gestão Distribuidora de Água",
       descricao:
         "Plataforma para controle de estoque, produtos, vendas e histórico, com relatórios e acesso restrito. Desenvolvida para otimizar a gestão de distribuidora de água.",
       tipo: "Desenvolvimento",
-      imagem: projeto2,
+      imagem: aguavitoria3,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "CRM DEPOSITO",
+      nome: "Sistema Interno de Gestão Imobiliária",
       descricao:
-        "CRM para gestão de vendas, clientes e relatórios em PDF. Inclui sistema de mensagens em massa para envio de promoções aos clientes.",
+        "Plataforma interna para corretores, exibindo imóveis com dados detalhados. Informações    estruturadas para facilitar anúncios e contratos.",
       tipo: "Desenvolvimento",
       imagem: projeto3,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "TKINTER",
+      nome: "Sistema de Cobranças com ASAAS",
       descricao:
         "Aplicativo desktop para gestão de cobranças de clientes, integrado à plataforma ASAAS para emissão de boletos. Solução simples e eficaz para controle financeiro.",
-      tipo: "Desenvolvimento",
-      imagem: projeto4,
+      tipo: "App Desktop",
+      imagem: projeto5,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "TV-METRÓPOLE",
+      nome: "Guia de Programação TV",
       descricao:
         "Sistema para rede emissora de TV que exibe a programação semanal, com dias e horários dos programas. Solução simples para consulta rápida.",
       tipo: "Desenvolvimento",
@@ -72,11 +72,27 @@ function Carrousel() {
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
-      nome: "MARKETPLACE X",
+      nome: "Plataforma de marketplace",
       descricao:
         "Plataforma de marketplace focada em simplicidade e praticidade define o propósito e os valores principais.",
       tipo: "Desenvolvimento",
       imagem: projeto7,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+    },
+    {
+      nome: "Sistema de Artigos com IA",
+      tipo: "Desenvolvimento/IA",
+      descricao:
+        "Site de blog com artigos gerados por IA, explorando temas e títulos interessantes. Oferece tópicos detalhados e respostas curiosas sobre cada assunto.",
+      imagem: projeto4,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+    },
+    {
+      nome: "Sistema de Controle CRM de Depósito",
+      tipo: "Desenvolvimento",
+      descricao:
+        "CRM para gestão de vendas, clientes e relatórios em PDF. Inclui sistema de mensagens em massa para envio de promoções aos clientes.",
+      imagem: projeto2,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
   ];
