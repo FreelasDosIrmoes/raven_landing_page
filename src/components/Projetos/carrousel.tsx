@@ -2,44 +2,86 @@ import { A11y, EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "./carrousel.css";
-
-import slide_image_1 from "../../assets/image-1.png";
-import slide_image_2 from "../../assets/image-2.png";
-import slide_image_3 from "../../assets/image-3.png";
+import {
+  aguavitoria1,
+  aguavitoria2,
+  aguavitoria3,
+  aguavitoria4,
+  aguavitoria5,
+  aguavitoria6,
+  projeto1,
+  projeto2,
+  projeto3,
+  projeto4,
+  projeto5,
+  projeto6,
+} from "./cdn-image";
+import { Button } from "../ui/button";
+import { Plus } from "lucide-react";
+import { ModalProjeto } from "./ModalProjeto";
+import { useState } from "react";
 
 function Carrousel() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<{
+    title: string;
+    description: string;
+    images: string[];
+  } | null>(null);
   const projetos = [
     {
       nome: "Sistema de Consulta IMEI",
       descricao: "Descrição do Projeto 1. Este é um projeto incrível!",
       tipo: "Design",
-      imagem: slide_image_1,
+      imagem: projeto1,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
       nome: "Projeto 0",
       descricao: "Descrição do Projeto 1. Este é um projeto incrível!",
       tipo: "Design",
-      imagem: slide_image_1,
+      imagem: projeto2,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
       nome: "Projeto 2",
       descricao: "Descrição do Projeto 2. Este projeto é focado em desenvolvimento.",
       tipo: "Desenvolvimento",
-      imagem: slide_image_2,
+      imagem: projeto3,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
       nome: "Projeto 3",
       descricao: "Descrição do Projeto 3. Um projeto de marketing digital.",
       tipo: "Marketing",
-      imagem: slide_image_3,
+      imagem: projeto4,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
     {
       nome: "Projeto 7",
       descricao: "Descrição do Projeto 3. Um projeto de marketing digital.",
       tipo: "Marketing",
-      imagem: slide_image_3,
+      imagem: projeto5,
+      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
     },
   ];
+
+  const ButtonOpenModal = (
+    <Button className="bg-primary-dark hover:bg-primary-normal transition-all duration-200 text-white px-4 py-2 rounded-xl flex justify-between">
+      <span>Veja mais</span>
+      <Plus />
+    </Button>
+  );
+
+  const handleOpenModal = (project: { title: string; description: string; images: string[] }) => {
+    setSelectedProject(project);
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <div className="container">
@@ -85,9 +127,24 @@ function Carrousel() {
                 <h2>{projeto.nome}</h2>
               </div>
               <div className="overlay">
-                <div>
-                  <span>{projeto.tipo}</span>
-                  <p>{projeto.descricao}</p>
+                <div className="flex w-full justify-between">
+                  <div>
+                    <span>{projeto.tipo}</span>
+                    <p>{projeto.descricao}</p>
+                  </div>
+                  <Button
+                    className="bg-primary-dark hover:bg-primary-normal transition-all duration-200 text-white px-4 py-2 rounded-xl flex justify-between"
+                    onClick={() =>
+                      handleOpenModal({
+                        title: projeto.nome,
+                        description: projeto.descricao,
+                        images: projeto.images,
+                      })
+                    }
+                  >
+                    <span>Veja mais</span>
+                    <Plus />
+                  </Button>
                 </div>
               </div>
             </div>
@@ -99,6 +156,16 @@ function Carrousel() {
           <button className="swiper-button-next"></button>
         </div>
       </Swiper>
+
+      {selectedProject && (
+        <ModalProjeto
+          isOpen={modalOpen}
+          onClose={handleCloseModal}
+          images={selectedProject.images}
+          title={selectedProject.title}
+          description={selectedProject.description}
+        />
+      )}
     </div>
   );
 }

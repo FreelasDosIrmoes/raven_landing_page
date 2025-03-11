@@ -1,5 +1,6 @@
 import "./App.css";
 import AdvantageScreen from "./components/AdvantagesScreen";
+import DialogBase from "./components/DialogBase";
 import FAQScreen from "./components/FAQScreen";
 import { Feedback } from "./components/Feedback";
 import Footer from "./components/Footer";
@@ -7,6 +8,7 @@ import type { HeaderLink } from "./components/Header";
 import Header from "./components/Header";
 import HomeScreen from "./components/HomeScreen";
 import { Projetos } from "./components/Projetos";
+import { Button } from "./components/ui/button";
 import { Toaster } from "./components/ui/sonner";
 import WorkWithUsScreen from "./components/WorkWithUsScreen";
 
