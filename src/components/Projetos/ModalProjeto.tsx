@@ -16,9 +16,6 @@ export const ModalProjeto = ({
   isOpen,
   onClose,
   images,
-  title,
-  description,
-  duration = "N/A",
 }: IModalProjeto) => {
   if (!isOpen) return null;
 
