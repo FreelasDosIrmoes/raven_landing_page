@@ -164,6 +164,7 @@ function Carrousel() {
                     <p>{projeto.descricao}</p>
                   </div>
                   <Button
+                    disabled
                     className="bg-primary-dark hover:bg-primary-normal transition-all duration-200 text-white px-4 py-2 rounded-xl flex justify-between"
                     onClick={() =>
                       handleOpenModal({
