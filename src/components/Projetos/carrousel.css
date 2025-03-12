@@ -51,6 +51,17 @@
   transition: opacity 0.5s ease, background 0.5s ease;
   border-radius: 2rem;
   opacity: 1;
+
+}
+
+@media (max-width: 1280px) {
+  .slide-container .overlay button {
+    opacity: 1;
+  }
+
+  .slide-container .overlay button {
+    opacity: 1;
+  }
 }
 
 .overlay h2 {

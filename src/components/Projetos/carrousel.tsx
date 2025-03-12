@@ -10,6 +10,28 @@ import {
   aguavitoria4,
   aguavitoria5,
   aguavitoria6,
+  crm1,
+  crm2,
+  crm3,
+  crm4,
+  crm5,
+  imei1,
+  imei2,
+  imei3,
+  imei4,
+  imei5,
+  imoveis1,
+  imoveis2,
+  imoveis3,
+  imoveis4,
+  imoveis5,
+  MARKETPLACEX1,
+  MARKETPLACEX2,
+  MARKETPLACEX3,
+  MARKETPLACEX4,
+  MARKETPLACEX5,
+  MARKETPLACEX6,
+  MARKETPLACEX7,
   projeto1,
   projeto2,
   projeto3,
@@ -17,6 +39,20 @@ import {
   projeto5,
   projeto6,
   projeto7,
+  responder1,
+  responder2,
+  responder3,
+  responder4,
+  responder5,
+  tkinter1,
+  tkinter2,
+  tkinter3,
+  tkinter4,
+  tvmetropole1,
+  tvmetropole2,
+  tvmetropole3,
+  tvmetropole4,
+  tvmetropole5,
 } from "./cdn-image";
 import { Button } from "../ui/button";
 import { Plus } from "lucide-react";
@@ -37,7 +73,7 @@ function Carrousel() {
         "Projeto para consulta de dados de celulares via IMEI, com informações detalhadas por plano e suporte a marcas famosas. Desenvolvido para uso on-demand.",
       tipo: "Desenvolvimento",
       imagem: projeto1,
-      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      images: [imei1, imei2, imei3, imei4, imei5],
     },
     {
       nome: "Sistema de Gestão Distribuidora de Água",
@@ -53,7 +89,7 @@ function Carrousel() {
         "Plataforma interna para corretores, exibindo imóveis com dados detalhados. Informações    estruturadas para facilitar anúncios e contratos.",
       tipo: "Desenvolvimento",
       imagem: projeto3,
-      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      images: [imoveis1, imoveis2, imoveis3, imoveis4],
     },
     {
       nome: "Sistema de Cobranças com ASAAS",
@@ -61,7 +97,7 @@ function Carrousel() {
         "Aplicativo desktop para gestão de cobranças de clientes, integrado à plataforma ASAAS para emissão de boletos. Solução simples e eficaz para controle financeiro.",
       tipo: "App Desktop",
       imagem: projeto5,
-      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      images: [tkinter1, tkinter2, tkinter3, tkinter4],
     },
     {
       nome: "Guia de Programação TV",
@@ -69,7 +105,7 @@ function Carrousel() {
         "Sistema para rede emissora de TV que exibe a programação semanal, com dias e horários dos programas. Solução simples para consulta rápida.",
       tipo: "Desenvolvimento",
       imagem: projeto6,
-      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      images: [tvmetropole1, tvmetropole2, tvmetropole3, tvmetropole4, tvmetropole5],
     },
     {
       nome: "Plataforma de marketplace",
@@ -77,7 +113,7 @@ function Carrousel() {
         "Plataforma de marketplace focada em simplicidade e praticidade define o propósito e os valores principais.",
       tipo: "Desenvolvimento",
       imagem: projeto7,
-      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      images: [MARKETPLACEX1, MARKETPLACEX2, MARKETPLACEX3, MARKETPLACEX4, MARKETPLACEX5, MARKETPLACEX6, MARKETPLACEX7],
     },
     {
       nome: "Sistema de Artigos com IA",
@@ -85,7 +121,7 @@ function Carrousel() {
       descricao:
         "Site de blog com artigos gerados por IA, explorando temas e títulos interessantes. Oferece tópicos detalhados e respostas curiosas sobre cada assunto.",
       imagem: projeto4,
-      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      images: [responder1, responder2, responder3, responder4],
     },
     {
       nome: "Sistema de Controle CRM de Depósito",
@@ -93,7 +129,7 @@ function Carrousel() {
       descricao:
         "CRM para gestão de vendas, clientes e relatórios em PDF. Inclui sistema de mensagens em massa para envio de promoções aos clientes.",
       imagem: projeto2,
-      images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      images: [crm1, crm2, crm3, crm4, crm5],
     },
   ];
 
@@ -164,8 +200,7 @@ function Carrousel() {
                     <p>{projeto.descricao}</p>
                   </div>
                   <Button
-                    disabled
-                    className="bg-primary-dark hover:bg-primary-normal transition-all duration-200 text-white px-4 py-2 rounded-xl flex justify-between"
+                    className="bg-primary-dark hover:bg-primary-normal opacity-1 transition-all duration-200 text-white px-4 py-2 rounded-xl flex items-center gap-2 xl:opacity-0 xl:group-hover:opacity-100"
                     onClick={() =>
                       handleOpenModal({
                         title: projeto.nome,
@@ -174,7 +209,7 @@ function Carrousel() {
                       })
                     }
                   >
-                    <span>Veja mais</span>
+                    Veja mais
                     <Plus />
                   </Button>
                 </div>
