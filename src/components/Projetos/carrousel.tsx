@@ -24,7 +24,6 @@ import {
   imoveis2,
   imoveis3,
   imoveis4,
-  imoveis5,
   MARKETPLACEX1,
   MARKETPLACEX2,
   MARKETPLACEX3,
@@ -43,7 +42,6 @@ import {
   responder2,
   responder3,
   responder4,
-  responder5,
   tkinter1,
   tkinter2,
   tkinter3,
@@ -65,6 +63,7 @@ function Carrousel() {
     title: string;
     description: string;
     images: string[];
+    duration: string;
   } | null>(null);
   const projetos = [
     {
@@ -74,6 +73,7 @@ function Carrousel() {
       tipo: "Desenvolvimento",
       imagem: projeto1,
       images: [imei1, imei2, imei3, imei4, imei5],
+      duration: '4 meses'
     },
     {
       nome: "Sistema de Gestão Distribuidora de Água",
@@ -82,6 +82,7 @@ function Carrousel() {
       tipo: "Desenvolvimento",
       imagem: aguavitoria3,
       images: [aguavitoria1, aguavitoria2, aguavitoria3, aguavitoria4, aguavitoria5, aguavitoria6],
+      duration: '4 meses'
     },
     {
       nome: "Sistema Interno de Gestão Imobiliária",
@@ -90,6 +91,7 @@ function Carrousel() {
       tipo: "Desenvolvimento",
       imagem: projeto3,
       images: [imoveis1, imoveis2, imoveis3, imoveis4],
+      duration: '3 meses'
     },
     {
       nome: "Sistema de Cobranças com ASAAS",
@@ -98,6 +100,7 @@ function Carrousel() {
       tipo: "App Desktop",
       imagem: projeto5,
       images: [tkinter1, tkinter2, tkinter3, tkinter4],
+      duration: '2 meses'
     },
     {
       nome: "Guia de Programação TV",
@@ -106,6 +109,7 @@ function Carrousel() {
       tipo: "Desenvolvimento",
       imagem: projeto6,
       images: [tvmetropole1, tvmetropole2, tvmetropole3, tvmetropole4, tvmetropole5],
+      duration: '2 meses'
     },
     {
       nome: "Plataforma de marketplace",
@@ -114,6 +118,7 @@ function Carrousel() {
       tipo: "Desenvolvimento",
       imagem: projeto7,
       images: [MARKETPLACEX1, MARKETPLACEX2, MARKETPLACEX3, MARKETPLACEX4, MARKETPLACEX5, MARKETPLACEX6, MARKETPLACEX7],
+      duration: '3 meses'
     },
     {
       nome: "Sistema de Artigos com IA",
@@ -122,6 +127,7 @@ function Carrousel() {
         "Site de blog com artigos gerados por IA, explorando temas e títulos interessantes. Oferece tópicos detalhados e respostas curiosas sobre cada assunto.",
       imagem: projeto4,
       images: [responder1, responder2, responder3, responder4],
+      duration: '4 meses'
     },
     {
       nome: "Sistema de Controle CRM de Depósito",
@@ -130,17 +136,11 @@ function Carrousel() {
         "CRM para gestão de vendas, clientes e relatórios em PDF. Inclui sistema de mensagens em massa para envio de promoções aos clientes.",
       imagem: projeto2,
       images: [crm1, crm2, crm3, crm4, crm5],
+      duration: '2 meses'
     },
   ];
 
-  // const ButtonOpenModal = (
-  //   <Button className="bg-primary-dark hover:bg-primary-normal transition-all duration-200 text-white px-4 py-2 rounded-xl flex justify-between">
-  //     <span>Veja mais</span>
-  //     <Plus />
-  //   </Button>
-  // );
-
-  const handleOpenModal = (project: { title: string; description: string; images: string[] }) => {
+  const handleOpenModal = (project: { title: string; description: string; images: string[]; duration: string }) => {
     setSelectedProject(project);
     setModalOpen(true);
   };
@@ -206,6 +206,7 @@ function Carrousel() {
                         title: projeto.nome,
                         description: projeto.descricao,
                         images: projeto.images,
+                        duration: projeto.duration
                       })
                     }
                   >
@@ -231,6 +232,7 @@ function Carrousel() {
           images={selectedProject.images}
           title={selectedProject.title}
           description={selectedProject.description}
+          duration={selectedProject.duration}
         />
       )}
     </div>

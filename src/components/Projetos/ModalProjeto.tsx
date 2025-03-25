@@ -107,7 +107,7 @@ export const ModalProjeto = ({
             <p>{description}</p>
             <div className="flex space-x-1">
               <span className="flex items-center font-semibold">Duração:</span>
-              <span>3 meses</span>
+              <span>{duration}</span>
               <span>
                 <Timer />
               </span>
