@@ -28,11 +28,24 @@ function App() {
         <meta name="description" content="Descubra os melhores produtos e serviços da Raven." />
         <meta property="og:title" content="Raven - Soluções De Software" />
         <meta
-          property="og:description"
-          content="Conheça nossos serviços e entre em contato agora!"
+            property="og:description"
+            content="Descubra como a Raven Tech (Raventech) pode transformar seu negócio com soluções de software inteligentes e personalizadas."
+        />
+        <meta
+          name="keywords"
+          content="Raven, Raventech, Raven Tech, soluções de software, software sob medida, desenvolvimento de software, tecnologia para empresas"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://raventech.com.br" />
+        <meta property="og:image" content="https://raventech.com.br/images/logo-raven.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Raven Tech - Soluções de Software" />
+        <meta
+          name="twitter:description"
+          content="A Raven Tech (Raventech) oferece soluções de software sob medida para sua empresa. Entre em contato e inove com a gente."
+        />
+        <meta name="twitter:image" content="https://raventech.com.br/images/logo-raven.png" />
       </Helmet>
 
       <Toaster position="top-right" richColors />
