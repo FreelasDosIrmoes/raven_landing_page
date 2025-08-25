@@ -8,8 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Check, Code, ExternalLink, Shield, Star, Zap } from "lucide-react";
 import { Separator } from "@radix-ui/react-separator";
-import type { HeaderLink } from "@/components/Header";
-import Header from "@/components/Header";
+import Header, { headerLinks } from "@/components/Header";
 import { Badge } from "@/components/ui/badge";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
 
@@ -49,12 +48,6 @@ export default function ShopDetail() {
     const productKeywords = [...product.tags, product.category.toLowerCase()].join(", ");
     return `${baseKeywords}, ${productKeywords}, ${product.title}`;
   };
-
-  const headerLinks: HeaderLink[] = [
-    { link: "#benefícios", name: "Serviços" },
-    { link: "#contact", name: "Contato" },
-    { link: "#faq", name: "Dúvidas" },
-  ];
 
   const redirectContactUs =
     "https://wa.me/5585989338909?text=Olá,%20queria%20saber%20melhor%20sobre%20os%20produtos%20e%20serviços%20da%20Raven.";

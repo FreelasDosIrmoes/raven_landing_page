@@ -3,8 +3,7 @@ import SEO from "@/components/SEO";
 import { products } from "../../mocks/products";
 import { useMemo, useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import type { HeaderLink } from "@/components/Header";
-import Header from "@/components/Header";
+import Header, { headerLinks } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Search, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -35,13 +34,6 @@ function fuzzySearch(items: typeof products, query: string) {
       return bExact - aExact;
     });
 }
-
-const headerLinks: HeaderLink[] = [
-  { link: "#benefícios", name: "Serviços" },
-  { link: "#contact", name: "Contato" },
-  { link: "#faq", name: "Dúvidas" },
-];
-
 const redirectContactUs =
   "https://wa.me/5585989338909?text=Olá,%20queria%20saber%20melhor%20sobre%20os%20produtos%20e%20serviços%20da%20Raven.";
 
