@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-import { Helmet } from "react-helmet";
 import AdvantageScreen from "../components/AdvantagesScreen";
 import FAQScreen from "../components/FAQScreen";
 import { Feedback } from "../components/Feedback";
