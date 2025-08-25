@@ -1,5 +1,7 @@
 import { Instagram } from "lucide-react";
 import { Button } from "../ui/button";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export type HeaderLink = {
   name: string;
@@ -11,24 +13,52 @@ interface HeaderProps {
   redirectContactUs: string;
 }
 
+export const headerLinks: HeaderLink[] = [
+  { link: "/#benefícios", name: "Serviços" },
+  { link: "/shop", name: "Loja" },
+  { link: "/#contact", name: "Contato" },
+  { link: "/#faq", name: "Dúvidas" },
+];
+
 export default function Header({ headerLinks, redirectContactUs }: HeaderProps) {
-  const handleScroll = (event: React.MouseEvent, link: string) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // 🔎 efeito que faz scroll quando a rota muda e tem hash
+  useEffect(() => {
+    if (location.hash) {
+      const section = document.querySelector(location.hash);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  const handleClick = (event: React.MouseEvent, link: string) => {
     event.preventDefault();
-    const section = document.querySelector(link);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+
+    // Link contém hash (#)
+    if (link.includes("#")) {
+      const [path, hash] = link.split("#");
+
+      if (path === "" || path === "/") {
+        // mesma página, só scroll
+        const section = document.querySelector(`#${hash}`);
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // rota diferente, navega e depois scroll (feito no useEffect)
+        navigate(`${path}#${hash}`);
+      }
+    } else {
+      // rota simples
+      navigate(link);
     }
   };
 
   return (
     <div className="w-full h-fit bg-white flex justify-center md:justify-between items-center px-22 py-5">
-      <a href={"https://raventech.com.br"}>
-        <img
-          alt="Raven logo"
-          src="/images/logo-raven.png"
-          className="w-[144px] md:w-44"
-          onClick={() => {}}
-        />
+      <a href="https://raventech.com.br">
+        <img alt="Raven logo" src="/images/logo-raven.png" className="w-[144px] md:w-44" />
       </a>
       <div className="md:flex hidden items-center gap-8">
         <Instagram
@@ -41,7 +71,7 @@ export default function Header({ headerLinks, redirectContactUs }: HeaderProps) 
             <a
               key={id}
               href={link.link}
-              onClick={(e) => handleScroll(e, link.link)}
+              onClick={(e) => handleClick(e, link.link)}
               className="text-primary-dark transition-colors duration-200 hover:text-primary-normal"
             >
               {link.name}
