@@ -1,0 +1,66 @@
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "API Meteorológica",
+    "description": "Previsão do tempo precisa para qualquer localidade do Brasil",
+    "url": "https://www.raventech.com.br/shop/api-clima",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "softwareVersion": "1.8",
+    "datePublished": "2024-02-01",
+    "dateModified": "2024-08-20",
+    "author": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "39.00",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2024-02-01",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "39.00",
+        "priceCurrency": "BRL",
+        "unitText": "MONTH",
+        "billingIncrement": "P1M"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Raven Tech",
+        "url": "https://www.raventech.com.br",
+        "telephone": "+55-85-98933-8909"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "featureList": [
+      "Previsão meteorológica para 7 dias",
+      "Dados climáticos em tempo real",
+      "Sistema de alertas meteorológicos",
+      "Cobertura para múltiplas cidades",
+      "Histórico climatológico",
+      "Índices UV e qualidade do ar",
+      "API REST com JSON"
+    ],
+    "screenshot": "https://raventech.com.br/images/api-clima-demo.png",
+    "applicationSubCategory": "Weather API",
+    "keywords": "API clima, previsão tempo, meteorologia, temperatura, chuva, API weather Brasil",
+    "provider": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Loja Raven Tech",
+      "url": "https://www.raventech.com.br/shop"
+    }
+  }

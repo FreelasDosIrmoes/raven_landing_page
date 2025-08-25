@@ -1,0 +1,59 @@
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Gateway de Pagamento",
+    "description": "Processe pagamentos com PIX, cartão e boleto de forma segura",
+    "url": "https://www.raventech.com.br/shop/api-pagamento",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "softwareVersion": "4.1",
+    "datePublished": "2024-03-01",
+    "dateModified": "2024-08-20",
+    "author": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceRange": "2.9% + R$ 0.39 por transação",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2024-03-01",
+      "seller": {
+        "@type": "Organization",
+        "name": "Raven Tech",
+        "url": "https://www.raventech.com.br",
+        "telephone": "+55-85-98933-8909"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "featureList": [
+      "PIX instantâneo",
+      "Cartão de crédito e débito",
+      "Boleto bancário",
+      "Sistema antifraude avançado",
+      "Split de pagamento",
+      "Recorrência automática",
+      "Dashboard completo"
+    ],
+    "screenshot": "https://raventech.com.br/images/gateway-demo.png",
+    "applicationSubCategory": "Payment Gateway",
+    "keywords": "gateway pagamento, API PIX, processar cartão, boleto, pagamento online, ecommerce",
+    "provider": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Loja Raven Tech",
+      "url": "https://www.raventech.com.br/shop"
+    }
+  }

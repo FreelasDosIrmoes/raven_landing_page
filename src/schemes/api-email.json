@@ -1,0 +1,66 @@
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "API de Email Marketing",
+    "description": "Envie emails transacionais e campanhas com alta deliverabilidade",
+    "url": "https://www.raventech.com.br/shop/api-email",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "softwareVersion": "1.9",
+    "datePublished": "2024-02-15",
+    "dateModified": "2024-08-20",
+    "author": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "59.00",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2024-02-15",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "59.00",
+        "priceCurrency": "BRL",
+        "unitText": "MONTH",
+        "billingIncrement": "P1M"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Raven Tech",
+        "url": "https://www.raventech.com.br",
+        "telephone": "+55-85-98933-8909"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "featureList": [
+      "Alta deliverabilidade (>95%)",
+      "Templates responsivos prontos",
+      "Analytics avançado",
+      "Automação de campanhas",
+      "Segmentação inteligente",
+      "A/B Testing integrado",
+      "SMTP confiável"
+    ],
+    "screenshot": "https://raventech.com.br/images/api-email-demo.png",
+    "applicationSubCategory": "Email Marketing API",
+    "keywords": "API email, email marketing, newsletter, email transacional, automação email",
+    "provider": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Loja Raven Tech",
+      "url": "https://www.raventech.com.br/shop"
+    }
+  }

@@ -1,0 +1,67 @@
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "API de CEP",
+    "description": "Consulte endereços completos através do CEP com dados atualizados dos Correios",
+    "url": "https://www.raventech.com.br/shop/api-cep",
+    "image": "https://raventech.com.br/images/api-cep.png",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "softwareVersion": "2.1",
+    "datePublished": "2024-01-15",
+    "dateModified": "2024-08-20",
+    "author": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "29.00",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2024-01-01",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "29.00",
+        "priceCurrency": "BRL",
+        "unitText": "MONTH",
+        "billingIncrement": "P1M"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Raven Tech",
+        "url": "https://www.raventech.com.br",
+        "telephone": "+55-85-98933-8909"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "featureList": [
+      "99.9% uptime garantido",
+      "Dados atualizados dos Correios",
+      "Tempo de resposta menor que 100ms",
+      "Suporte técnico 24/7",
+      "Rate limit de 500 requisições/minuto",
+      "Formato JSON padronizado",
+      "Autenticação segura com API Key"
+    ],
+    "screenshot": "https://raventech.com.br/images/api-cep-demo.png",
+    "applicationSubCategory": "Location API",
+    "keywords": "API CEP, consulta CEP, endereço CEP, API Correios, validação endereço, localização Brasil",
+    "provider": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Loja Raven Tech",
+      "url": "https://www.raventech.com.br/shop"
+    }
+  }

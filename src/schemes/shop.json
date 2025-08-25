@@ -1,0 +1,280 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Loja Raven Tech",
+    "description": "APIs, microserviços e soluções digitais para empresas brasileiras",
+    "url": "https://www.raventech.com.br/shop",
+    "logo": "https://raventech.com.br/images/logo-raven.png",
+    "image": "https://raventech.com.br/images/logo-raven.png",
+    "telephone": "+55-85-98933-8909",
+    "email": "contato.raventech@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fortaleza",
+      "addressRegion": "CE",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.72",
+      "reviewCount": "762",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Catálogo de APIs e Soluções",
+      "numberOfItems": "6",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "APIs de Localização",
+          "numberOfItems": "1",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "SoftwareApplication",
+                "name": "API de CEP",
+                "description": "Consulte endereços completos através do CEP com dados atualizados dos Correios",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Any",
+                "featureList": [
+                  "99.9% uptime",
+                  "Dados dos Correios", 
+                  "Resposta < 100ms",
+                  "Suporte 24/7"
+                ],
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.8",
+                  "reviewCount": "127"
+                }
+              },
+              "price": "29.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "29.00",
+                "priceCurrency": "BRL",
+                "billingIncrement": "P1M",
+                "unitText": "MONTH"
+              },
+              "url": "https://www.raventech.com.br/shop/api-cep",
+              "category": "Localização"
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "APIs de Validação",
+          "numberOfItems": "1",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "SoftwareApplication",
+                "name": "API CPF/CNPJ Validator",
+                "description": "Validação e consulta de CPF e CNPJ com dados da Receita Federal",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Any",
+                "featureList": [
+                  "Dados Receita Federal",
+                  "Validação em tempo real",
+                  "Histórico de consultas",
+                  "API RESTful"
+                ],
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "reviewCount": "127"
+                }
+              },
+              "price": "49.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "49.00",
+                "priceCurrency": "BRL",
+                "billingIncrement": "P1M",
+                "unitText": "MONTH"
+              },
+              "url": "https://www.raventech.com.br/shop/api-cpf-cnpj",
+              "category": "Validação"
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "APIs de Clima",
+          "numberOfItems": "1",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "SoftwareApplication",
+                "name": "API Meteorológica",
+                "description": "Previsão do tempo precisa para qualquer localidade do Brasil",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Any",
+                "featureList": [
+                  "Previsão 7 dias",
+                  "Dados em tempo real",
+                  "Alertas meteorológicos",
+                  "Múltiplas cidades"
+                ],
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.7",
+                  "reviewCount": "127"
+                }
+              },
+              "price": "39.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "39.00",
+                "priceCurrency": "BRL",
+                "billingIncrement": "P1M",
+                "unitText": "MONTH"
+              },
+              "url": "https://www.raventech.com.br/shop/api-clima",
+              "category": "Clima"
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "APIs de Comunicação",
+          "numberOfItems": "2",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "SoftwareApplication",
+                "name": "API de SMS",
+                "description": "Envio de SMS em massa com alta taxa de entrega e relatórios detalhados",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Any",
+                "featureList": [
+                  "Alta taxa entrega",
+                  "Relatórios detalhados",
+                  "Agendamento",
+                  "Templates"
+                ],
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.6",
+                  "reviewCount": "127"
+                }
+              },
+              "price": "0.12",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "0.12",
+                "priceCurrency": "BRL",
+                "unitText": "SMS"
+              },
+              "url": "https://www.raventech.com.br/shop/api-sms",
+              "category": "Comunicação"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "SoftwareApplication",
+                "name": "API de Email Marketing",
+                "description": "Envie emails transacionais e campanhas com alta deliverabilidade",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Any",
+                "featureList": [
+                  "Alta deliverabilidade",
+                  "Templates responsivos",
+                  "Analytics",
+                  "Automação"
+                ],
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.5",
+                  "reviewCount": "127"
+                }
+              },
+              "price": "59.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "59.00",
+                "priceCurrency": "BRL",
+                "billingIncrement": "P1M",
+                "unitText": "MONTH"
+              },
+              "url": "https://www.raventech.com.br/shop/api-email",
+              "category": "Marketing"
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "APIs de Pagamento",
+          "numberOfItems": "1",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "SoftwareApplication",
+                "name": "Gateway de Pagamento",
+                "description": "Processe pagamentos com PIX, cartão e boleto de forma segura",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Any",
+                "featureList": [
+                  "PIX instantâneo",
+                  "Cartão de crédito",
+                  "Boleto bancário",
+                  "Antifraude"
+                ],
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.8",
+                  "reviewCount": "127"
+                }
+              },
+              "priceRange": "2.9% + R$ 0.39 por transação",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.raventech.com.br/shop/api-pagamento",
+              "category": "Pagamento"
+            }
+          ]
+        }
+      ]
+    },
+    "paymentAccepted": [
+      "PIX",
+      "Credit Card",
+      "Debit Card",
+      "Bank Transfer"
+    ],
+    "currenciesAccepted": "BRL",
+    "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+    "priceRange": "R$ 29 - R$ 59",
+    "potentialAction": [
+      {
+        "@type": "ViewAction",
+        "target": "https://www.raventech.com.br/shop"
+      },
+      {
+        "@type": "SearchAction",
+        "target": "https://www.raventech.com.br/shop?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    ],
+    "sameAs": [
+      "https://github.com/RavenEnterprise",
+      "https://instagram.com/raventechsolutions"
+    ]
+  }

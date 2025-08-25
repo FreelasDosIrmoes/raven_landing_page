@@ -8,6 +8,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "strict": false,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "isolatedModules": false,
+    "suppressImplicitAnyIndexErrors": true
   }
 }

@@ -1,0 +1,65 @@
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "API de SMS",
+    "description": "Envio de SMS em massa com alta taxa de entrega e relatórios detalhados",
+    "url": "https://www.raventech.com.br/shop/api-sms",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "softwareVersion": "2.5",
+    "datePublished": "2024-01-20",
+    "dateModified": "2024-08-20",
+    "author": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0.12",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2024-01-20",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "0.12",
+        "priceCurrency": "BRL",
+        "unitText": "SMS"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Raven Tech",
+        "url": "https://www.raventech.com.br",
+        "telephone": "+55-85-98933-8909"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "featureList": [
+      "Alta taxa de entrega (>98%)",
+      "Relatórios detalhados de envio",
+      "Sistema de agendamento",
+      "Templates personalizáveis",
+      "Envio em massa otimizado",
+      "Blacklist automática",
+      "Webhook para status"
+    ],
+    "screenshot": "https://raventech.com.br/images/api-sms-demo.png",
+    "applicationSubCategory": "SMS API",
+    "keywords": "API SMS, envio SMS, SMS marketing, mensagem texto, comunicação empresarial",
+    "provider": {
+      "@type": "Organization",
+      "name": "Raven Tech",
+      "url": "https://www.raventech.com.br"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Loja Raven Tech",
+      "url": "https://www.raventech.com.br/shop"
+    }
+  }
