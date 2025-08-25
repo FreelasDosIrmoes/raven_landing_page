@@ -4,7 +4,6 @@ import { useMemo } from "react";
 import { useParams } from "react-router-dom";
 import type { Product } from "../../mocks/products";
 import { products } from "../../mocks/products";
-import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Check, Code, ExternalLink, Shield, Star, Zap } from "lucide-react";
