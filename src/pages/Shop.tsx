@@ -71,6 +71,7 @@ export default function Shop() {
         url="/shop"
         type="website"
       />
+      <SchemaMarkup type="store" />
 
       <div className="w-full font-sans min-h-screen">
         <Header headerLinks={headerLinks} redirectContactUs={redirectContactUs} />

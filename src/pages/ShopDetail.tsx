@@ -76,6 +76,8 @@ export default function ShopDetail() {
         image="https://raventech.com.br/images/logo-raven.png"
       />
 
+      <SchemaMarkup type="product" product={product} />
+
       <div className="min-h-screen bg-background">
         <Header headerLinks={headerLinks} redirectContactUs={redirectContactUs} />
 
