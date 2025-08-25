@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import "./App.css";
 import { Helmet } from "react-helmet";
 import AdvantageScreen from "./components/AdvantagesScreen";
@@ -28,8 +29,8 @@ function App() {
         <meta name="description" content="Descubra os melhores produtos e serviços da Raven." />
         <meta property="og:title" content="Raven - Soluções De Software" />
         <meta
-            property="og:description"
-            content="Descubra como a Raven Tech (Raventech) pode transformar seu negócio com soluções de software inteligentes e personalizadas."
+          property="og:description"
+          content="Descubra como a Raven Tech (Raventech) pode transformar seu negócio com soluções de software inteligentes e personalizadas."
         />
         <meta
           name="keywords"
