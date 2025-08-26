@@ -8,7 +8,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Check, Code, ExternalLink, Shield, Star, Zap } from "lucide-react";
 import { Separator } from "@radix-ui/react-separator";
-import Header, { headerLinks } from "@/components/Header";
 import { Badge } from "@/components/ui/badge";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
 
@@ -71,8 +70,6 @@ export default function ShopDetail() {
       <SchemaMarkup type="product" product={product} />
 
       <div className="min-h-screen bg-background">
-        <Header headerLinks={headerLinks} redirectContactUs={redirectContactUs} />
-
         <main className="container mx-auto px-4 py-8">
           {/* Breadcrumb */}
           <div className="mb-6">

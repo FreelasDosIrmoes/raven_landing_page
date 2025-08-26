@@ -3,7 +3,6 @@ import SEO from "@/components/SEO";
 import { products } from "../../mocks/products";
 import { useMemo, useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Header, { headerLinks } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Search, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -28,14 +27,11 @@ function fuzzySearch(items: typeof products, query: string) {
       );
     })
     .sort((a, b) => {
-      // Prioritize exact matches in title
       const aExact = a.title.toLowerCase().includes(searchQuery) ? 1 : 0;
       const bExact = b.title.toLowerCase().includes(searchQuery) ? 1 : 0;
       return bExact - aExact;
     });
 }
-const redirectContactUs =
-  "https://wa.me/5585989338909?text=Olá,%20queria%20saber%20melhor%20sobre%20os%20produtos%20e%20serviços%20da%20Raven.";
 
 export default function Shop() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -66,8 +62,6 @@ export default function Shop() {
       <SchemaMarkup type="store" />
 
       <div className="w-full font-sans min-h-screen">
-        <Header headerLinks={headerLinks} redirectContactUs={redirectContactUs} />
-
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">

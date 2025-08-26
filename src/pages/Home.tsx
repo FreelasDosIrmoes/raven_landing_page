@@ -3,16 +3,13 @@ import AdvantageScreen from "../components/AdvantagesScreen";
 import FAQScreen from "../components/FAQScreen";
 import { Feedback } from "../components/Feedback";
 import Footer from "../components/Footer";
-import Header, { headerLinks } from "../components/Header";
 import HomeScreen from "../components/HomeScreen";
 import { Projetos } from "../components/Projetos";
 import { Toaster } from "../components/ui/sonner";
 import WorkWithUsScreen from "../components/WorkWithUsScreen";
 import "../App.css";
 import SEO from "@/components/SEO";
-
-const redirectContactUs =
-  "https://wa.me/5585989338909?text=Olá,%20queria%20saber%20melhor%20sobre%20os%20produtos%20e%20serviços%20da%20Raven.";
+import { redirectContactUs } from "@/App";
 
 function Home() {
   return (
@@ -27,7 +24,6 @@ function Home() {
 
       <Toaster position="top-right" richColors />
       <div className="w-full font-sans">
-        <Header redirectContactUs={redirectContactUs} headerLinks={headerLinks} />
         <HomeScreen redirectContactUs={redirectContactUs} />
         <div id="benefícios">
           <AdvantageScreen />
