@@ -16,6 +16,7 @@ interface HeaderProps {
 export const headerLinks: HeaderLink[] = [
   { link: "/#benefícios", name: "Serviços" },
   { link: "/shop", name: "Loja" },
+  { link: "/blog", name: "Blog" },
   { link: "/#contact", name: "Contato" },
   { link: "/#faq", name: "Dúvidas" },
 ];
@@ -24,7 +25,6 @@ export default function Header({ headerLinks, redirectContactUs }: HeaderProps) 
   const navigate = useNavigate();
   const location = useLocation();
 
-  // 🔎 efeito que faz scroll quando a rota muda e tem hash
   useEffect(() => {
     if (location.hash) {
       const section = document.querySelector(location.hash);
