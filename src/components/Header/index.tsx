@@ -37,20 +37,20 @@ export default function Header({ headerLinks, redirectContactUs }: HeaderProps) 
   const handleClick = (event: React.MouseEvent, link: string) => {
     event.preventDefault();
 
-    // Link contém hash (#)
     if (link.includes("#")) {
       const [path, hash] = link.split("#");
 
       if (path === "" || path === "/") {
-        // mesma página, só scroll
-        const section = document.querySelector(`#${hash}`);
-        if (section) section.scrollIntoView({ behavior: "smooth" });
+        if (location.pathname === "/") {
+          const section = document.querySelector(`#${hash}`);
+          if (section) section.scrollIntoView({ behavior: "smooth" });
+        } else {
+          navigate("/");
+        }
       } else {
-        // rota diferente, navega e depois scroll (feito no useEffect)
         navigate(`${path}#${hash}`);
       }
     } else {
-      // rota simples
       navigate(link);
     }
   };
