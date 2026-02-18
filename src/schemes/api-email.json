@@ -3,7 +3,7 @@
     "@type": "SoftwareApplication",
     "name": "API de Email Marketing",
     "description": "Envie emails transacionais e campanhas com alta deliverabilidade",
-    "url": "https://www.raventech.com.br/shop/api-email",
+    "url": "https://www.ravensolution.tech/shop/api-email",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
     "softwareVersion": "1.9",
@@ -12,7 +12,7 @@
     "author": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "offers": {
       "@type": "Offer",
@@ -30,7 +30,7 @@
       "seller": {
         "@type": "Organization",
         "name": "Raven Tech",
-        "url": "https://www.raventech.com.br",
+        "url": "https://www.ravensolution.tech",
         "telephone": "+55-85-98933-8909"
       }
     },
@@ -50,17 +50,17 @@
       "A/B Testing integrado",
       "SMTP confiável"
     ],
-    "screenshot": "https://raventech.com.br/images/api-email-demo.png",
+    "screenshot": "https://ravensolution.tech/images/api-email-demo.png",
     "applicationSubCategory": "Email Marketing API",
     "keywords": "API email, email marketing, newsletter, email transacional, automação email",
     "provider": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "isPartOf": {
       "@type": "WebSite",
       "name": "Loja Raven Tech",
-      "url": "https://www.raventech.com.br/shop"
+      "url": "https://www.ravensolution.tech/shop"
     }
   }

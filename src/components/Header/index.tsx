@@ -57,7 +57,7 @@ export default function Header({ headerLinks, redirectContactUs }: HeaderProps) 
 
   return (
     <div className="w-full h-fit bg-white flex justify-center md:justify-between items-center px-22 py-5">
-      <a href="https://raventech.com.br">
+      <a href="https://ravensolution.tech">
         <img alt="Raven logo" src="/images/logo-raven.png" className="w-[144px] md:w-44" />
       </a>
       <div className="md:flex hidden items-center gap-8">

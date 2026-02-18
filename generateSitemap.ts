@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import { SitemapStream, streamToPromise } from "sitemap";
 
-const sitemap = new SitemapStream({ hostname: "https://www.raventech.com.br" });
+const sitemap = new SitemapStream({ hostname: "https://www.ravensolution.tech" });
 
 sitemap.write({ url: "/", changefreq: "daily", priority: 1.0 });
 sitemap.write({ url: "/#benefícios", changefreq: "monthly", priority: 0.8 });

@@ -3,7 +3,7 @@
     "@type": "SoftwareApplication",
     "name": "API CPF/CNPJ Validator",
     "description": "Validação e consulta de CPF e CNPJ com dados da Receita Federal",
-    "url": "https://www.raventech.com.br/shop/api-cpf-cnpj",
+    "url": "https://www.ravensolution.tech/shop/api-cpf-cnpj",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
     "softwareVersion": "3.2",
@@ -12,7 +12,7 @@
     "author": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "offers": {
       "@type": "Offer",
@@ -30,7 +30,7 @@
       "seller": {
         "@type": "Organization",
         "name": "Raven Tech",
-        "url": "https://www.raventech.com.br",
+        "url": "https://www.ravensolution.tech",
         "telephone": "+55-85-98933-8909"
       }
     },
@@ -50,17 +50,17 @@
       "Compliance com LGPD",
       "Autenticação OAuth2 + API Key"
     ],
-    "screenshot": "https://raventech.com.br/images/api-cpf-cnpj-demo.png",
+    "screenshot": "https://ravensolution.tech/images/api-cpf-cnpj-demo.png",
     "applicationSubCategory": "Validation API",
     "keywords": "API CPF, API CNPJ, validação CPF, validação CNPJ, Receita Federal, documento brasileiro",
     "provider": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "isPartOf": {
       "@type": "WebSite",
       "name": "Loja Raven Tech",
-      "url": "https://www.raventech.com.br/shop"
+      "url": "https://www.ravensolution.tech/shop"
     }
   }

@@ -24,7 +24,7 @@ export default function ShopDetail() {
       <>
         <SEO
           type="website"
-          image="https://raventech.com.br/images/logo-raven.png"
+          image="https://ravensolution.tech/images/logo-raven.png"
           title="Produto não encontrado - Loja Raven"
           description="O produto que você procura não foi encontrado em nossa loja."
           keywords="Raven, Raventech, produto não encontrado"
@@ -65,7 +65,7 @@ export default function ShopDetail() {
         keywords={generateKeywords(product)}
         url={`/shop/${product.slug}`}
         type="product"
-        image="https://raventech.com.br/images/logo-raven.png"
+        image="https://ravensolution.tech/images/logo-raven.png"
       />
 
       <SchemaMarkup type="product" product={product} />

@@ -3,8 +3,8 @@
     "@type": "SoftwareApplication",
     "name": "API de CEP",
     "description": "Consulte endereços completos através do CEP com dados atualizados dos Correios",
-    "url": "https://www.raventech.com.br/shop/api-cep",
-    "image": "https://raventech.com.br/images/api-cep.png",
+    "url": "https://www.ravensolution.tech/shop/api-cep",
+    "image": "https://ravensolution.tech/images/api-cep.png",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
     "softwareVersion": "2.1",
@@ -13,7 +13,7 @@
     "author": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "offers": {
       "@type": "Offer",
@@ -31,7 +31,7 @@
       "seller": {
         "@type": "Organization",
         "name": "Raven Tech",
-        "url": "https://www.raventech.com.br",
+        "url": "https://www.ravensolution.tech",
         "telephone": "+55-85-98933-8909"
       }
     },
@@ -51,17 +51,17 @@
       "Formato JSON padronizado",
       "Autenticação segura com API Key"
     ],
-    "screenshot": "https://raventech.com.br/images/api-cep-demo.png",
+    "screenshot": "https://ravensolution.tech/images/api-cep-demo.png",
     "applicationSubCategory": "Location API",
     "keywords": "API CEP, consulta CEP, endereço CEP, API Correios, validação endereço, localização Brasil",
     "provider": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "isPartOf": {
       "@type": "WebSite",
       "name": "Loja Raven Tech",
-      "url": "https://www.raventech.com.br/shop"
+      "url": "https://www.ravensolution.tech/shop"
     }
   }

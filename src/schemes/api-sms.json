@@ -3,7 +3,7 @@
     "@type": "SoftwareApplication",
     "name": "API de SMS",
     "description": "Envio de SMS em massa com alta taxa de entrega e relatórios detalhados",
-    "url": "https://www.raventech.com.br/shop/api-sms",
+    "url": "https://www.ravensolution.tech/shop/api-sms",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
     "softwareVersion": "2.5",
@@ -12,7 +12,7 @@
     "author": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "offers": {
       "@type": "Offer",
@@ -29,7 +29,7 @@
       "seller": {
         "@type": "Organization",
         "name": "Raven Tech",
-        "url": "https://www.raventech.com.br",
+        "url": "https://www.ravensolution.tech",
         "telephone": "+55-85-98933-8909"
       }
     },
@@ -49,17 +49,17 @@
       "Blacklist automática",
       "Webhook para status"
     ],
-    "screenshot": "https://raventech.com.br/images/api-sms-demo.png",
+    "screenshot": "https://ravensolution.tech/images/api-sms-demo.png",
     "applicationSubCategory": "SMS API",
     "keywords": "API SMS, envio SMS, SMS marketing, mensagem texto, comunicação empresarial",
     "provider": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "isPartOf": {
       "@type": "WebSite",
       "name": "Loja Raven Tech",
-      "url": "https://www.raventech.com.br/shop"
+      "url": "https://www.ravensolution.tech/shop"
     }
   }

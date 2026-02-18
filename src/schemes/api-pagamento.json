@@ -3,7 +3,7 @@
     "@type": "SoftwareApplication",
     "name": "Gateway de Pagamento",
     "description": "Processe pagamentos com PIX, cartão e boleto de forma segura",
-    "url": "https://www.raventech.com.br/shop/api-pagamento",
+    "url": "https://www.ravensolution.tech/shop/api-pagamento",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
     "softwareVersion": "4.1",
@@ -12,7 +12,7 @@
     "author": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "offers": {
       "@type": "Offer",
@@ -23,7 +23,7 @@
       "seller": {
         "@type": "Organization",
         "name": "Raven Tech",
-        "url": "https://www.raventech.com.br",
+        "url": "https://www.ravensolution.tech",
         "telephone": "+55-85-98933-8909"
       }
     },
@@ -43,17 +43,17 @@
       "Recorrência automática",
       "Dashboard completo"
     ],
-    "screenshot": "https://raventech.com.br/images/gateway-demo.png",
+    "screenshot": "https://ravensolution.tech/images/gateway-demo.png",
     "applicationSubCategory": "Payment Gateway",
     "keywords": "gateway pagamento, API PIX, processar cartão, boleto, pagamento online, ecommerce",
     "provider": {
       "@type": "Organization",
       "name": "Raven Tech",
-      "url": "https://www.raventech.com.br"
+      "url": "https://www.ravensolution.tech"
     },
     "isPartOf": {
       "@type": "WebSite",
       "name": "Loja Raven Tech",
-      "url": "https://www.raventech.com.br/shop"
+      "url": "https://www.ravensolution.tech/shop"
     }
   }

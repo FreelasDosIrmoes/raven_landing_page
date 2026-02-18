@@ -12,11 +12,11 @@ const SEO = ({
   title,
   description,
   keywords,
-  image = "https://raventech.com.br/images/logo-raven.png",
+  image = "https://ravensolution.tech/images/logo-raven.png",
   url,
   type = "website",
 }: SEOProps) => {
-  const baseUrl = "https://raventech.com.br";
+  const baseUrl = "https://ravensolution.tech";
   const fullUrl = url ? `${baseUrl}${url}` : baseUrl;
 
   return (

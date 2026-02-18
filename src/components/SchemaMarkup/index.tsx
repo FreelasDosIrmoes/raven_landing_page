@@ -12,8 +12,8 @@ export function SchemaMarkup({ type, product }: SchemaMarkupProps) {
     "@type": "Store",
     name: "Loja Raven Tech",
     description: "APIs, microserviços e soluções digitais para empresas",
-    url: "https://www.raventech.com.br/shop",
-    logo: "https://raventech.com.br/images/logo-raven.png",
+    url: "https://www.ravensolution.tech/shop",
+    logo: "https://ravensolution.tech/images/logo-raven.png",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Catálogo de APIs e Soluções",
@@ -28,7 +28,7 @@ export function SchemaMarkup({ type, product }: SchemaMarkupProps) {
     description: product.description,
     applicationCategory: "DeveloperApplication",
     operatingSystem: "Any",
-    url: `https://www.raventech.com.br/shop/${product.slug}`,
+    url: `https://www.ravensolution.tech/shop/${product.slug}`,
     offers: {
       "@type": "Offer",
       price: product.price.replace(/[^\d,]/g, "").replace(",", "."),
@@ -37,7 +37,7 @@ export function SchemaMarkup({ type, product }: SchemaMarkupProps) {
       seller: {
         "@type": "Organization",
         name: "Raven Tech",
-        url: "https://www.raventech.com.br",
+        url: "https://www.ravensolution.tech",
       },
     },
     aggregateRating: {
@@ -51,7 +51,7 @@ export function SchemaMarkup({ type, product }: SchemaMarkupProps) {
     provider: {
       "@type": "Organization",
       name: "Raven Tech",
-      url: "https://www.raventech.com.br",
+      url: "https://www.ravensolution.tech",
     },
   });
 

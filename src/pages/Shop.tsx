@@ -59,7 +59,7 @@ export default function Shop() {
         title="Loja Raven - Soluções e Produtos de Software"
         description="Descubra nossa loja de APIs, sistemas prontos, microserviços e soluções digitais da Raven Tech. Tecnologia sob medida para impulsionar sua empresa."
         keywords="Raven, Raventech, Raven Tech, loja de software, API CEP, API CPF CNPJ, gateway pagamento, API SMS, microserviços Brasil, APIs para desenvolvedores, software fortaleza"
-        image="https://raventech.com.br/images/logo-raven.png"
+        image="https://ravensolution.tech/images/logo-raven.png"
         url="/shop"
         type="website"
       />

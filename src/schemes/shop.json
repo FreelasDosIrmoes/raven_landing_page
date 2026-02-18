@@ -3,9 +3,9 @@
     "@type": "Store",
     "name": "Loja Raven Tech",
     "description": "APIs, microserviços e soluções digitais para empresas brasileiras",
-    "url": "https://www.raventech.com.br/shop",
-    "logo": "https://raventech.com.br/images/logo-raven.png",
-    "image": "https://raventech.com.br/images/logo-raven.png",
+    "url": "https://www.ravensolution.tech/shop",
+    "logo": "https://ravensolution.tech/images/logo-raven.png",
+    "image": "https://ravensolution.tech/images/logo-raven.png",
     "telephone": "+55-85-98933-8909",
     "email": "contato.raventech@gmail.com",
     "address": {
@@ -61,7 +61,7 @@
                 "billingIncrement": "P1M",
                 "unitText": "MONTH"
               },
-              "url": "https://www.raventech.com.br/shop/api-cep",
+              "url": "https://www.ravensolution.tech/shop/api-cep",
               "category": "Localização"
             }
           ]
@@ -101,7 +101,7 @@
                 "billingIncrement": "P1M",
                 "unitText": "MONTH"
               },
-              "url": "https://www.raventech.com.br/shop/api-cpf-cnpj",
+              "url": "https://www.ravensolution.tech/shop/api-cpf-cnpj",
               "category": "Validação"
             }
           ]
@@ -141,7 +141,7 @@
                 "billingIncrement": "P1M",
                 "unitText": "MONTH"
               },
-              "url": "https://www.raventech.com.br/shop/api-clima",
+              "url": "https://www.ravensolution.tech/shop/api-clima",
               "category": "Clima"
             }
           ]
@@ -180,7 +180,7 @@
                 "priceCurrency": "BRL",
                 "unitText": "SMS"
               },
-              "url": "https://www.raventech.com.br/shop/api-sms",
+              "url": "https://www.ravensolution.tech/shop/api-sms",
               "category": "Comunicação"
             },
             {
@@ -213,7 +213,7 @@
                 "billingIncrement": "P1M",
                 "unitText": "MONTH"
               },
-              "url": "https://www.raventech.com.br/shop/api-email",
+              "url": "https://www.ravensolution.tech/shop/api-email",
               "category": "Marketing"
             }
           ]
@@ -246,7 +246,7 @@
               "priceRange": "2.9% + R$ 0.39 por transação",
               "priceCurrency": "BRL",
               "availability": "https://schema.org/InStock",
-              "url": "https://www.raventech.com.br/shop/api-pagamento",
+              "url": "https://www.ravensolution.tech/shop/api-pagamento",
               "category": "Pagamento"
             }
           ]
@@ -265,11 +265,11 @@
     "potentialAction": [
       {
         "@type": "ViewAction",
-        "target": "https://www.raventech.com.br/shop"
+        "target": "https://www.ravensolution.tech/shop"
       },
       {
         "@type": "SearchAction",
-        "target": "https://www.raventech.com.br/shop?search={search_term_string}",
+        "target": "https://www.ravensolution.tech/shop?search={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     ],

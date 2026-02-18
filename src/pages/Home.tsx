@@ -19,7 +19,7 @@ function Home() {
     <>
       <SEO
         description="Descubra os melhores produtos e serviços da Raven."
-        image="https://raventech.com.br/images/logo-raven.png"
+        image="https://ravensolution.tech/images/logo-raven.png"
         keywords="Raven, Raventech, Raven Tech, soluções de software, software sob medida, desenvolvimento de software, tecnologia para empresas"
         title="Raven - Soluções De Software"
         type="website"
